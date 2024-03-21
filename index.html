@@ -1,0 +1,400 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- ion icons link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind Portfolio</title>
+  </head>
+  <body class="font-nunito bg-black">
+    <!-- into section -->
+    <div
+      class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
+      <!-- navbar -->
+      <nav class="w-full fixed top-0 bg-black z-10 ">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./images/logo.png" alt="" />
+            <span class="text-2xl font-bold  text-white">Portfolio</span
+            >
+          </div>
+          <ul
+            class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
+          >
+            <li class="hover:text-yellow-500">
+              <a href="#">home</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#about">about me</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#services">services</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#works">works</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+          <img
+            id="moon"src="./images/moon.png"class="hidden md:block w-5 cursor-pointer"alt=""/>
+          
+          <ul id="menu"class="hidden  bg-yellow-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+             <li>
+              <a id="hLink" href="#home">home</a>
+            </li>
+            <li>
+              <a id="hLink" href="#about">about me</a>
+            </li>
+            <li>
+              <a id="hLink" href="#services">services</a>
+            </li>
+            <li>
+              <a id="hLink" href="#works">works</a>
+            </li>
+            <li>
+              <a id="hLink" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- intro content -->
+      <!-- image -->
+      <img
+        class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
+        src="./images/banner.png"
+        alt=""
+      />
+      <!-- circle -->
+      <div
+        class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"></div>
+      <!-- animated text -->
+      <div
+        class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
+        <h2 class="text-2xl lg:text-4xl xl:text-5xl	font-bold text-black  lg:mt-7">Web-Developer</h2>
+        <p id="text" class="text-red-500"></p>
+      </div>
+      <!-- texts -->
+      <div
+        class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white bg-slate-900 shadow-black p-6 h-fit w-1/3"
+      >
+        <h1 class="text-4xl font-bold text-black">Hi, I'am </h1>
+        <h2 class="text-4xl font-bold text-black">Sazzad Hossain Nur </h2>
+        <p class="text-black">
+          I have a Bachelor's degree majored in Computer Engineering.
+        Currently I am focused on learning JavaScript Full Stack Web Development. <br>
+        I loved to build products that can be used by millions of people. <br>
+        </p>
+        <a
+          class="bg-black  text-white text-xl px-3 py-2 rounded-md font-semibold w-fit transition-all hover:bg-[#fe0000] "
+          href="#contact"
+          >Hire Me</a
+        >
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about" class="px-10 bg-black">
+      <div
+        class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20"
+      >
+        <!-- left -->
+        <div class="relative">
+          <img
+            class="h-1/4 absolute top-0 left-0 -z-10"
+            src="./images/dots.png"
+            alt=""
+          />
+          <div class="h-full rounded-full overflow-hidden">
+            <img src="./images/IMG_8049-removebg-preview.png" alt="" />
+          </div>
+        </div>
+        <!-- right -->
+        <div class="my-auto flex flex-col gap-3">
+          <h1 class="text-yellow-300 font-bold">ABOUT ME</h1>
+          <h1 class="text-3xl font-medium text-yellow-300">Better Design</h1>
+          <h1 class="text-3xl font-medium text-yellow-300">
+            Better Experience
+          </h1>
+          <p class="text-white">
+            I design and build digital products. I'm also a multi-disciplinary
+            maker with over 10 years of experiences in wide range of design
+            disciplines.
+          </p>
+          <h2 class="text-white font-medium">HTML</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-[#fe0000] h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-white font-medium">Javascript</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-[#fe0000] h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-white font-medium">React</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-[#fe0000] h-1.5 rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12">
+      <a href="#skills" style="font-family: 'Roboto Mono', monospace;"
+        class="px-6 py-3 text-yellow-300 border-2 border font-bold transition-all hover:bg-[#fe0000] rounded-md">Check
+        out
+        My
+        Skills !</a>
+    </div>
+    <!-- social Links -->
+    <div class="mt-12">
+      <ul class="flex gap-4">
+        <li class="mr-2 flex justify-center items-center text-blue-700">
+          <a href="" target="_blank" class="w-[35px] h-[35px]">
+            <ion-icon name="logo-facebook" class="w-[35px] h-[35px] transition-all hover:text-[#309543]"></ion-icon>
+          </a>
+        </li>
+        <li class="mr-2 flex justify-center items-center text-white">
+          <a href="" target="_blank" class="w-[35px] h-[35px]">
+            <ion-icon name="logo-github" class="w-[35px] h-[35px] transition-all hover:text-[#309543]"></ion-icon>
+          </a>
+        </li>
+        <li class="mr-2 flex justify-center items-center text-blue-400">
+          <a href="" target="_blank" class="w-[35px] h-[35px]">
+            <ion-icon name="logo-twitter" class="w-[35px] h-[35px] transition-all hover:text-[#309543]"></ion-icon>
+          </a>
+        </li>
+        <li class="mr-2 flex justify-center items-center text-[#d62976]">
+          <a href="" target="_blank" class="w-[35px] h-[35px]">
+            <ion-icon name="logo-instagram" class="w-[35px] h-[35px] transition-all hover:text-pink-300"></ion-icon>
+          </a>
+        </li>
+        <li class="mr-2 flex justify-center items-center text-red-600">
+          <a href="" target="_blank" class="w-[35px] h-[35px]">
+            <ion-icon name="mail" class="w-[35px] h-[35px] transition-all hover:text-[#309543]"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+     <!-- ********************************************** -->
+  <!-- tech stack Section -->
+  <!-- ********************************************** -->
+
+  <section class="bg-black px-8 sm:px-16 py-16 max-w-screen-xl mx-auto" id="skills">
+    <div class="text-blue-400">
+      <div class="flex justify-center items-center gap-12 pb-12">
+        <div class="h-px flex-1 bg-[#309543] hidden sm:block"></div>
+        <h2 class="text-4xl font-bold">Tech Stack</h2>
+        <div class="h-px flex-1 bg-[#309543] hidden sm:block"></div>
+      </div>
+
+      <!-- skills -->
+      <div class="grid grid-cols-3  sm:grid-cols-5 gap-12" style="font-family: 'Roboto Mono', monospace;">
+
+        <!-- Skill 01 -->
+        <div class="flex flex-col items-center gap-2 ">
+          <img src="./images/icons8-html-5-96.svg " alt="html icon" class="w-24 h-24 ">
+          <p class="font-semibold text-orange-600">HTML</p>
+        </div>
+
+
+        <!-- Skill 02 -->
+
+        <div class="flex flex-col items-center gap-2">
+          <img src="./images/icons8-css3-96.svg" alt="css icon" class="w-24 h-24">
+          <p class="font-semibold text-sky-400">CSS</p>
+        </div>
+
+        <!-- Skill 03 -->
+
+        <div class="flex flex-col items-center gap-2 ">
+          <img src="./images/tailwind-css.svg" alt="tailwind css icon" class="w-24 h-24">
+          <p class="font-semibold text-sky-200 text-center">Tailwind CSS</p>
+        </div>
+
+
+        <!-- Skill 04 -->
+
+        <div class="flex flex-col items-center gap-2">
+          <img src="./images/icons8-javascript-96.svg" alt="javascript icon" class="w-24 h-24">
+          <p class="font-semibold text-yellow-300">JavaScript</p>
+        </div>
+        <!-- Skill 04 -->
+
+        <div class="flex flex-col items-center gap-2">
+          <img src="./images/icons8-react-80.svg" alt="javascript icon" class="w-24 h-24">
+          <p class="font-semibold text-[#cccccc]">React</p>
+        </div>
+
+
+        <!-- Skill 05 -->
+
+        <div class="flex flex-col items-center gap-2">
+          <img src="./images/icons8-git-96.svg" alt="git icon" class="w-24 h-24">
+          <p class="font-semibold text-[#cccccc]">Git</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    <!-- services -->
+    <div id="services" class="bg-black">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold">SERVICES</h1>
+          <h1 class="text-3xl text-yellow-300">What do I offer?</h1>
+          <p class="w-1/2 text-center text-white">
+            My approach to website design is to create a website that
+            strengthens your company’s brand while ensuring ease of use and
+            simplicity for your audience.
+          </p>
+        </div>
+        <!-- bottom -->
+        <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+          <!-- card -->
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./images/icon.png" alt="" />
+            <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+            <p class="text-yellow-300">
+              I specialize in creating interactive websites for individuals and
+              small businesses.
+            </p>
+            <a class="text-white font-semibold text-sm" href=""
+              >Read More</a
+            >
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./images/icon.png" alt="" />
+            <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+            <p class="text-yellow-300">
+              I specialize in creating interactive websites for individuals and
+              small businesses.
+            </p>
+            <a class="text-white font-semibold text-sm" href=""
+              >Read More</a
+            >
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./images/icon.png" alt="" />
+            <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+            <p class="text-yellow-300">
+              I specialize in creating interactive websites for individuals and
+              small businesses.
+            </p>
+            <a class="text-white font-semibold text-sm" href=""
+              >Read More</a
+            >
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- works -->
+    <div id="works" class="py-40 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-yellow-300 font-bold">PORTFOLIO</h1>
+          <h1 class="text-3xl text-sky-400">Works & Projects</h1>
+          <p class="w-1/2 text-center text-white">
+            I help designers, small agencies and businesses bring their ideas to
+            life. Powered by Figma, VS Code and coffee, I turn your requirements
+            into a well-designed websites
+          </p>
+        </div>
+        <!-- bottom -->
+        <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./images/item.png" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./images/item.png" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./images/item.png" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./images/item.png" />
+          </div>
+          <!-- card -->
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="bg-black">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-yellow-300 font-bold">CONTACT</h1>
+          <h1 class="text-3xl text-sky-300">Have a Question?</h1>
+          <p class="w-1/2 text-center text-white">
+            Do you have an idea? Let's discuss it and see what we can do
+            together.
+          </p>
+        </div>
+        <!-- bottom -->
+        <form class="mt-5 p-8 flex flex-col gap-5 items-center">
+          <input
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            type="text"
+            placeholder="Name Surname"
+          />
+          <input
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            type="email"
+            placeholder="Email"
+          />
+          <textarea
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            cols="30"
+            rows="10"
+            placeholder="Message..."
+          ></textarea>
+          <button
+            class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="w-full bg-zinc-800">
+      <div class="container mx-auto py-5 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img class="w-8" src="./img/logo.png" alt="" />
+          <span class="text-2xl font-bold text-white">Portfolio</span>
+        </div>
+        <span class="hidden md:block font-medium text-white"
+          >© 2024 Portfolio. Design with ♥️ Sajid</span
+        >
+        
+      </div>
+    </div>
+   
+  </body>
+</html>
